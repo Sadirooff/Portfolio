@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* start header */
+
+nav{
+    background-color: crimson;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 50px;
+}
+
+nav .main-menu{
+    display: flex;
+    list-style: none;
+}
+
+nav .main-menu li a{
+    color: #fff;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+     
+    font-size: 17px;
+}
+
+nav .main-menu li a:hover{
+    color: #000;
+}
+
+nav .openMenu{
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .closeMenu{
+    font-size: 20px;
+    display:none;
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* end header */
+
+section{
+    padding: 100px ;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("./img/Space-Background-Image-2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main .content{
+    max-width: 800px;
+}
+
+.main .content h2 { 
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.main .content h2 span{
+     font-size: 60px;
+     font-weight: 600;
+}
+
+.animated-text{
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-text h3{
+    color: crimson;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.animated-text h3:nth-child(1){
+    animation: text-move 10s infinite ;
+}
+
+@keyframes text-move{
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -70px;
+    }
+    50%{
+        margin-top: -140px;
+    }   
+    75%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+.btn{
+    color: #fff;
+    background: crimson;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    margin: 50px 0 ;
+}
+
+.btn:hover{
+    background: #fff;
+    color:crimson;
+    transition: .6s ease;
+}
+
+.media-icons a{
+   color: #fff;
+   font-size: 25px;
+   margin-top: 30px;
+   letter-spacing: 30px;
+}
+
+.media-icons a:hover{
+    color: crimson;
+    transition: .6s ease;
+} 
+
+/*  End main */
+
+/* About start */
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+}
+
+.section-title{
+    position: relative;
+    color: crimson;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.section-title:before{
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background:crimson;
+    transform: translateX(-50%);
+}
+
+.section-title:after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:crimson;
+    transform: translateX(-50%);
+}
+
+.about .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.about .content .col-left{
+    position: relative;
+    width: 45%;
+}
+
+.about .content .col-right{
+    position: relative;
+    width: 45%;
+}
+
+.about .content .img-card{
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+}
+
+.about .content .img-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.paragraph-text{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.about .content-title{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/*  End about */
+
+/*  start skills */
+
+.skills{
+    background: #000016;
+}
+
+.skills .content{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.skills .col-left{
+    position: relative;
+    width: 45%;
+}
+
+.skills .col-left .content-title{
+    margin-bottom: 20px;
+}
+
+.skills .col-right{
+    position: relative;
+    width: 45%;
+}
+
+.skills .col-right .bar{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.skills .col-right .bar .info{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 5px;
+}
+
+.skills .info span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .line{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.skills .line::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.skills .html::before{
+    width: 95%;
+    background:rgb(212, 99, 57);
+}
+
+
+.skills .css::before{
+    width: 85%;
+    background:rgb(40, 40, 180);
+}
+
+
+.skills .js::before{
+    width: 89%;
+    background:rgb(182, 182, 42);
+}
+
+
+.skills .jq::before{
+    width: 77%;
+    background:rgb(34, 148, 34);
+}
+
+
+.skills .linux::before{
+    width: 87%;
+    background:rgb(61, 3, 100);
+}
+
+/*  End skills */
+
+
+/* start services*/
+
+.services .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.content p{
+    width: 80%;
+}
+
+.services .content .card{
+    background:#fff;
+    width: 30%;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+}
+
+.services .card .service-icon{
+    color: crimson;
+    font-size:70px;
+    text-align: center;
+    transition:transform .5s ease ;
+}
+
+.services .card:hover .service-icon{
+   transform: translateY(-10px);
+   transition: .5s ease;
+}
+
+.services .card .info{
+    text-align: center;
+}
+
+.services .card .info h3{
+    color:crimson;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+/* 
+/* end services*/
+
+/* start work*/
+
+.work{
+    background: #000016;
+}
+
+.work .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.work .content .card{
+    width: 30%;
+    margin:15px;
+}
+
+.work .content .card-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.work .content .card-img img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.work .content .card-img img:hover{
+    transform: scale(1.2);
+    
+}
+
+/* end work */
+
+/* start contact */
+
+.contact .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+ .contact .content .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+} 
+ .contact .row .card{
+    background:#fff;
+    width: 240px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgb(1 1 1 /15%);
+    border-radius: 10px;
+} 
+
+ .contact .card .contact-icon{
+    color: crimson;
+    font-size: 45px;
+    text-align: center;
+    transition:transform .5s ease ;
+}
+
+.contact .card:hover .contact-icon{
+    transform: translateY(-10px);
+}
+
+.contact .card .info{
+    text-align: center;
+}
+
+.contact .card .info h3{
+    color: #111;
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.contact .card .info span{
+    color: #666;
+    font-weight:500;
+}
+
+.contact-form{
+    background: #fff;
+    max-width: 50%;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+}
+
+.contact-form h3{
+    color: #111;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box input{
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-form .input-box .send-btn{
+    color: #fff;
+    background: crimson;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 2px;
+    width: 100%;
+    cursor: pointer;    
+    transition: .5s;
+}
+
+.contact-form .input-box .send-btn:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid red;
+}
+
+.input-box textarea{
+    width: 100%;
+}
+
+/*end contact*/
+
+/* satrt footer*/
+
+.footer{
+    background: #000016;
+    color: #fff;
+    text-align: center;
+    padding: 34px;
+}
+
+.footer .footer-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+
+
+/* end footer*/
+
+/* respons */
+
+@media(max-width:1050px){
+
+    nav .main-menu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .main-menu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+
+    nav .main-menu li a:hover{
+        background: crimson;
+    }
+
+
+
+
+
+
+
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main .content h2{
+        font-size: 20px;  
+    }
+
+    
+    .main .content h3{
+        font-size: 35px;  
+    }
+
+    .section-title{
+        font-size: 36px;
+    }
+
+    .about .content{
+        flex-direction:column;
+    }
+
+    .about .content .column{
+        position: relative;
+        width: 100%;
+    }
+
+    .about .content .col-right{
+        margin-top: 40px;
+    }
+
+    .skills .content{
+        flex-direction: column; 
+    }
+
+    .skills .content .column{
+        position: relative;
+        width: 100%;
+    }
+
+    .skills .content .col-right{
+        margin-top: 40px;
+    }
+
+    .contact-form{
+        padding: 35px 40px;
+    }
+
+}
+
+/*******************************/
+
+@media(max-width:650px){
+    .services .content{
+        display: block;
+    }
+
+    .services .content .card{
+        width: 90%;
+    }
+
+    .work .content{
+        display: block;
+    }
+
+    .work .content .card{
+        width: 90%;
+    }
+
+    .main .content h2 span{
+        font-size: 50px;
+    }
+
+
+
+}
